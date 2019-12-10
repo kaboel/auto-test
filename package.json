@@ -1,0 +1,19 @@
+{
+  "name": "auto-test",
+  "version": "1.0.0",
+  "description": "JestxPuppeter",
+  "main": "test.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaboel/auto-test.git"
+  },
+  "author": "Faiq <faiq.kaboel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaboel/auto-test/issues"
+  },
+  "homepage": "https://github.com/kaboel/auto-test#readme"
+}
