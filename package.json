@@ -2,18 +2,32 @@
   "name": "auto-test",
   "version": "1.0.0",
   "description": "JestxPuppeter",
-  "main": "test.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaboel/auto-test.git"
-  },
+  "main": "test.spec.js",
   "author": "Faiq <faiq.kaboel@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kaboel/auto-test/issues"
+  "scripts": {
+    "test": "jest --testResultProcessor=jest-html-reporter"
   },
-  "homepage": "https://github.com/kaboel/auto-test#readme"
+  "jest": {
+    "verbose": true,
+    "testResultsProcessor": "jest-html-reporter"
+  },
+  "jest-html-reporter": {
+    "outputPath": "./report/report.html",
+    "includeFailureMsg": true
+  },
+  "dependencies": {
+    "core-js": "^3.4.8",
+    "jest": "^24.9.0",
+    "jest-environment-node": "^24.9.0",
+    "jest-html-reporter": "^2.8.0",
+    "puppeteer": "^2.0.0",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.6",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
